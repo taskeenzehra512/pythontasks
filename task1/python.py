@@ -1,14 +1,21 @@
-# Create a list to store numbers that meet the criteria
-numbers = []
-
-# Loop through each number from 2000 to 3200 (inclusive)
-for i in range(2000, 3201):
+def find_divisible(start_range, end_range, divisor1, divisor2):
+      
+    # Create a list to store numbers that meet the criteria
+    numbers = []
     
-    # Check if the number is divisible by 7 and not divisible by 5
-    if i % 7 == 0 and i % 5 != 0:
+    # Loop through each number from 1 to end_range (inclusive)
+    for i in range(start_range, end_range + 1):
         
-        # Append the number to the list
-        numbers.append(i)
+        # Check if the number is divisible by 'divisor' 
+        if i % divisor1 == 0  and i % divisor2 != 0:
+            # Append the number to the list
+            numbers.append(i)
 
-# Convert the list of numbers to a comma-separated string and print it
-print(",".join(map(str, numbers)))
+    return numbers       
+
+
+if __name__ == "__main__":
+    # Call the function with three sets of arguments
+    result = find_divisible(2000, 3201, 7, 5)
+    print(f"Result is: ",result)
+
