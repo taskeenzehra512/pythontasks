@@ -15,7 +15,7 @@ def find_divisible(start_range, end_range, divisor1, divisor2):
 
 
 if __name__ == "__main__":
-    # Call the function with three sets of arguments
+    # Call the function with 4 sets of arguments
     result = find_divisible(2000, 3201, 7, 5)
     print(f"Result is: ",result)
 
