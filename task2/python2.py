@@ -1,54 +1,30 @@
-import argparse  # Import the argparse library to handle command-line arguments
-import math  # Import the math library for mathematical functions like square root
+import argparse
+import math
 
-def parse_arguments():
-    # Create the argument parser with a description of what the program does
-    parser = argparse.ArgumentParser(description="Calculate the distance from the origin after a series of movements.")
+# Initialize the parser
+parser = argparse.ArgumentParser(description="Move in 2D space")
 
-    # Add an argument for UP, expecting a positive integer, and mark it as required
-    parser.add_argument('--UP', type=int, required=True, help="Steps to move UP (positive integer).")
-    
-    parser.add_argument('--DOWN', type=int, required=True, help="Steps to move DOWN (positive integer).")
+# Add arguments for each direction
+parser.add_argument('--up', type=int, default=0, help='Move up by a number of units')
+parser.add_argument('--down', type=int, default=0, help='Move down by a number of units')
+parser.add_argument('--left', type=int, default=0, help='Move left by a number of units')
+parser.add_argument('--right', type=int, default=0, help='Move right by a number of units')
 
-    parser.add_argument('--LEFT', type=int, required=True, help="Steps to move LEFT (positive integer).")
+# Parse the arguments
+args = parser.parse_args()
 
-    parser.add_argument('--RIGHT', type=int, required=True, help="Steps to move RIGHT (positive integer).")
+# Initialize position
+x, y = 0, 0
 
-    # Parse the command-line arguments and store them in the 'args' object
-    args = parser.parse_args()
+# Apply movements
+y += args.up
+y -= args.down
+x -= args.left
+x += args.right
 
-    try:
-        # Check if any of the parsed arguments are negative
-        if args.UP < 0 or args.DOWN < 0 or args.LEFT < 0 or args.RIGHT < 0:
-            # Raise a ValueError if a negative value is found
-            raise ValueError("All steps must be non-negative integers.")
+# Print final position
+print(f"Final position: ({x}, {y})")
 
-    except ValueError as e:
-        # Print the error message if a ValueError is raised
-        print(f"Error: {e}")
-        # Exit the program with an error code (1) indicating something went wrong
-        exit(1)
-
-    # Return the parsed and validated arguments for use in the program
-    return args
-
-def main():
-    # Parse the input arguments using the parse_arguments function
-    args = parse_arguments()
-
-    # Calculate the net vertical movement (UP - DOWN)
-    vertical = args.UP - args.DOWN
-
-    # Calculate the net horizontal movement (RIGHT - LEFT)
-    horizontal = args.RIGHT - args.LEFT
-
-    # Calculate the distance from the origin using the Pythagorean theorem
-    distance = math.sqrt(vertical**2 + horizontal**2)
-
-    # Print the distance, rounded to the nearest integer
-    print(f"The distance from the origin is: {round(distance)}")
-
-# This checks if the script is being run directly (not imported as a module)
-if __name__ == "__main__":
-    # If the script is run directly, execute the main function
-    main()
+# Distance formula
+distance = math.sqrt(x**2+y**2)
+print(f"Distance from origin: {distance}")
