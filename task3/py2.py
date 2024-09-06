@@ -4,6 +4,9 @@ import subprocess
 def run_command(command):
     return subprocess.check_output(command, shell=True).decode('utf-8').strip()
 
+
+if __name__ == "__main__":
+    
 # Retrieve hardware details using lscpu and grep
 byte_order = run_command("lscpu | grep 'Byte Order' | awk '{print $3, $4}'")
 cores_per_socket = run_command("lscpu | grep 'Core(s) per socket' | awk '{print $4}'")
