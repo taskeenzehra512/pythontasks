@@ -12,3 +12,15 @@ Revision: Revision: not found
 Sandbox: Sandbox: not found
 MBF exec time: MBF output generation exec time 192.783 seconds.
 QTM exec time: QTM exec time 11062.5420
+Start time: Start time: not found
+Working Directory: Working Directory: not found
+Installation location: Installation location: not found
+Path to Log file: Path to Log file: not found
+All Running Information: All Running Information: not found
+All Build information: All Build information: not found
+Ending time: Ending time: not found
+Session Duration: # Session Duration: 16133 seconds
+Fatal Count: Fatal Count: not found
+Error Count: Error Count: not found
+Warning Count: Warning Count: not found
+Exit code with description: Exit code with description: not found
