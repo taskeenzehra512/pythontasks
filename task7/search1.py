@@ -83,7 +83,7 @@ def main():
     and write the results to an output file.
     """
     # Define the file paths
-    tmilt_file_path = '/home/emumba/Documents/pythontasks/task7/tmilt.0.231215.075551.6BT+.3FzgZTbd.log'  # Replace with your file path
+    tmilt_file_path = '/home/emumba/Documents/pythontasks/task7/tmilt.0.231215.075551.6BT+.3FzgZTbd.log'  # Replace with file path
     output_file_path = '/home/emumba/Documents/pythontasks/task7/output.txt'  # Path to store the results
     
     # Extract information from the file
