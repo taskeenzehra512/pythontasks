@@ -1,3 +1,4 @@
+
 ```
 .
 ├── readme.md
@@ -9,11 +10,15 @@
 │   ├── hardware_info.txt
 │   └── py2.py
 ├── task4
-│   └── carlo.py
+│   ├── carlo.py
+│   └── config.json
 ├── task5
 │   ├── myenv
 │   └── sqrcube.py
 ├── task6
+│   ├── dasync.py
+│   ├── dsync.py
+│   └── myenv
 ├── task7
 │   ├── controller.231215.075537.fpMs.8qpS7S5pG.log
 │   ├── output.txt
@@ -23,5 +28,6 @@
 ├── task8
 └── task9
     └── word1.py
-11 directories, 13 files
+
+12 directories, 16 files
 ```
