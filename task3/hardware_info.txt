@@ -1,0 +1,12 @@
+Byte Order:          Little Endian
+Core(s) per socket:  4
+Socket(s):           1
+Model name:          Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+CPU MHz:             
+CPU max MHz:         4000.0000
+CPU min MHz:         400.0000
+Virtualization Support:      VT-x
+L1 Cache:            128
+L2 cache:            1
+L3 cache:            8
+RAM Memory:          31984MB
