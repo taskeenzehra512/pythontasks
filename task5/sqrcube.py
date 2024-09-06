@@ -8,6 +8,9 @@ def cube_list(numbers):
     # Function to cube each number in the list
     return [x**3 for x in numbers]
 
+
+if __name__ == "__main__":
+
 # List of numbers to be squared and cubed
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
