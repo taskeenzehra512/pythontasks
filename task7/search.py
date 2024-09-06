@@ -58,7 +58,7 @@ if __name__ == "__main__":
     # Define the file paths
     file1_path = '/home/emumba/Documents/pythontasks/task7/tmilt.0.231215.075551.6BT+.3FzgZTbd.log'  # Path to the first file
     file2_path = '/home/emumba/Documents/pythontasks/task7/controller.231215.075537.fpMs.8qpS7S5pG.log'  # Path to the second file
-    output_file_path = '/home/emumba/Documents/testing/output.txt'  # Path for the output file
+    output_file_path = '/home/emumba/Documents/pythontasks/task7/output.txt'  # Path for the output file
     
     # Define patterns for the first file
     file1_patterns = {
