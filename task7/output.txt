@@ -1,0 +1,14 @@
+Working dir: # Initial working dir:
+Installation Location: Location of the installation: not found
+Log file Path: # This log file is:
+Host: #     Host:        'big-0-11.local'.''
+Current OS: #     Current OS:   Linux/x86_64, 3.10.0-957.10.1.el7.x86_64 #1 SMP Mon Mar 18 15:06:45 UTC 2019
+Uptime: #     Uptime:       14d 15:21:13
+RAM: #     RAM:          1,081,592,262,656
+Build information: # Build information:
+Release: Release: not found
+Build: Build: not found
+Revision: Revision: not found
+Sandbox: Sandbox: not found
+MBF exec time: MBF output generation exec time 192.783 seconds.
+QTM exec time: QTM exec time 11062.5420
