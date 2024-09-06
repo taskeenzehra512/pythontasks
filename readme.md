@@ -1,4 +1,5 @@
-
+## This repository contain Python tasks 
+for training purpose.
 ```
 .
 ├── readme.md
